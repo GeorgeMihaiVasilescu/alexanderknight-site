@@ -1,3 +1,5 @@
+
+
 export default function Home() {
   return (
     <main className="w-full h-screen bg-white text-black overflow-hidden relative">
@@ -18,7 +20,7 @@ export default function Home() {
 
       <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 z-10">
         <a
-          href="https://wa.me/4917635772123?text=Hi%20Alexander%2C%20I%20love%20your%20work%20and%20would%20like%20to%20book%20a%20tattoo."
+          href="https://buy.stripe.com/cNi3cw7L9dKU8sYcq5aEE00"
           target="_blank"
           rel="noopener noreferrer"
           className="text-black border border-black px-6 py-3 text-lg rounded-2xl hover:bg-black hover:text-white transition-all"
@@ -40,4 +42,3 @@ export default function Home() {
     </main>
   );
 }
-
