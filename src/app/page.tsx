@@ -1,9 +1,10 @@
 export default function Home() {
   return (
     <main className="w-full h-screen bg-white text-black overflow-hidden relative">
-      <div className="absolute inset-0 z-0 flex items-center justify-center">
+      {/* Centered Video */}
+      <div className="absolute top-0 left-0 w-full h-full z-0 flex items-center justify-center">
         <video
-          className="w-[80vw] h-auto max-h-[80vh] object-contain bg-white"
+          className="w-full max-w-[500px] h-auto object-contain bg-white"
           src="/reel.mp4"
           autoPlay
           loop
@@ -12,11 +13,13 @@ export default function Home() {
         />
       </div>
 
-      <div className="absolute top-6 left-1/2 transform -translate-x-1/2 z-20 text-xl font-semibold text-black text-center px-4">
-        Alexander Knight · Tattoo Artist
+      {/* Title */}
+      <div className="absolute top-6 left-1/2 transform -translate-x-1/2 z-20 text-xl font-semibold text-black text-center">
+        Alexander Knight · <br /> Tattoo Artist
       </div>
 
-      <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 z-10">
+      {/* Book Now Button */}
+      <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 z-20">
         <a
           href="https://buy.stripe.com/cNi3cw7L9dKU8sYcq5aEE00"
           target="_blank"
@@ -27,6 +30,7 @@ export default function Home() {
         </a>
       </div>
 
+      {/* Instagram Link */}
       <div className="absolute bottom-4 right-4 z-20">
         <a
           href="https://instagram.com/darkart_ink_"
