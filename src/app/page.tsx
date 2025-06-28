@@ -1,9 +1,9 @@
 export default function Home() {
   return (
     <main className="w-full h-screen bg-white text-black overflow-hidden relative">
-      <div className="absolute top-0 left-0 w-full h-full z-0 flex items-center justify-center">
+      <div className="absolute inset-0 z-0 flex items-center justify-center">
         <video
-          className="max-w-[90vw] max-h-[90vh] object-contain bg-white"
+          className="w-[80vw] h-auto max-h-[80vh] object-contain bg-white"
           src="/reel.mp4"
           autoPlay
           loop
@@ -40,4 +40,5 @@ export default function Home() {
     </main>
   );
 }
+
 
