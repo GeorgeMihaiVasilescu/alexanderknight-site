@@ -1,10 +1,10 @@
 export default function Home() {
   return (
     <main className="w-full h-screen bg-white text-black overflow-hidden relative">
-      {/* VIDEO FULLSCREEN */}
-      <div className="absolute top-0 left-0 w-full h-full z-0 flex items-center justify-center">
+      {/* VIDEO CENTERED, OPAC */}
+      <div className="absolute top-0 left-0 w-full h-full z-0 flex items-center justify-center bg-white">
         <video
-          className="object-contain opacity-100 w-full h-auto max-h-[80%]"
+          className="w-full h-auto max-h-[80%]"
           src="/reel.mp4"
           autoPlay
           loop
@@ -13,12 +13,12 @@ export default function Home() {
         />
       </div>
 
-      {/* TITLU */}
+      {/* TEXT DEASUPRA */}
       <div className="absolute top-8 left-1/2 transform -translate-x-1/2 z-20 text-2xl md:text-3xl font-bold text-black">
         Alexander Knight · Tattoo Artist
       </div>
 
-      {/* BOOK NOW */}
+      {/* BOOK NOW BUTTON */}
       <div className="absolute bottom-24 left-1/2 transform -translate-x-1/2 z-20">
         <a
           href="https://buy.stripe.com/cNi3cw7L9dKU8sYcq5aEE00"
@@ -30,7 +30,7 @@ export default function Home() {
         </a>
       </div>
 
-      {/* INSTAGRAM */}
+      {/* INSTAGRAM HANDLE */}
       <div className="absolute bottom-4 right-4 z-20">
         <a
           href="https://instagram.com/darkart_ink_"
