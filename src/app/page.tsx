@@ -1,24 +1,26 @@
-
-
 export default function Home() {
   return (
     <main className="w-full h-screen bg-white text-black overflow-hidden relative">
-      <div className="absolute top-0 left-0 w-full h-full z-0 flex items-center justify-center">
+      {/* VIDEO CENTERED */}
+      <div className="absolute inset-0 z-0 flex items-center justify-center">
         <video
-          className="object-contain scale-50"
+          className="object-contain w-full max-w-[90vw] max-h-[90vh]"
           src="/reel.mp4"
           autoPlay
           loop
           muted
           playsInline
+          poster="/poster.jpg" // dacă ai un preview image
         />
       </div>
 
-      <div className="absolute top-6 left-1/2 transform -translate-x-1/2 z-20 text-xl font-semibold text-black">
-        Alexander Knight · Tattoo Artist
+      {/* TITLE */}
+      <div className="absolute top-6 left-1/2 transform -translate-x-1/2 z-20 text-center px-4">
+        <h1 className="text-xl md:text-2xl font-semibold">Alexander Knight · Tattoo Artist</h1>
       </div>
 
-      <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 z-10">
+      {/* BOOKING BUTTON */}
+      <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 z-20">
         <a
           href="https://buy.stripe.com/cNi3cw7L9dKU8sYcq5aEE00"
           target="_blank"
@@ -29,6 +31,7 @@ export default function Home() {
         </a>
       </div>
 
+      {/* INSTAGRAM HANDLE */}
       <div className="absolute bottom-4 right-4 z-20">
         <a
           href="https://instagram.com/darkart_ink_"
@@ -39,6 +42,10 @@ export default function Home() {
           @darkart_ink_
         </a>
       </div>
+
+      {/* BACKGROUND GRADIENT OVERLAY (OPTIONAL) */}
+      <div className="absolute inset-0 bg-gradient-to-b from-white/70 to-white/90 z-10 pointer-events-none" />
     </main>
   );
 }
+
