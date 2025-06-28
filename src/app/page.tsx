@@ -1,10 +1,10 @@
 export default function Home() {
   return (
     <main className="w-full h-screen bg-white text-black overflow-hidden relative">
-      {/* Centered Video */}
-      <div className="absolute inset-0 z-0 flex items-center justify-center bg-white">
+      {/* Fullscreen Background Video */}
+      <div className="absolute inset-0 flex items-center justify-center z-0">
         <video
-          className="w-auto h-[70vh] sm:h-[80vh] object-contain bg-white"
+          className="w-full h-full object-cover"
           src="/reel.mp4"
           autoPlay
           loop
@@ -14,12 +14,12 @@ export default function Home() {
       </div>
 
       {/* Title */}
-      <div className="absolute top-6 left-1/2 transform -translate-x-1/2 z-20 text-xl font-semibold text-black text-center px-4">
-        Alexander Knight · <br /> Tattoo Artist
+      <div className="absolute top-6 left-1/2 transform -translate-x-1/2 z-20 text-xl font-semibold text-black text-center">
+        Alexander Knight ·<br />Tattoo Artist
       </div>
 
-      {/* Book Now Button */}
-      <div className="absolute bottom-24 left-1/2 transform -translate-x-1/2 z-20">
+      {/* Book Button */}
+      <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 z-20">
         <a
           href="https://buy.stripe.com/cNi3cw7L9dKU8sYcq5aEE00"
           target="_blank"
@@ -44,5 +44,4 @@ export default function Home() {
     </main>
   );
 }
-
 
