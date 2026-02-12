@@ -45,15 +45,14 @@ export default function Home() {
 <h1
   className="
     fixed
-    top-[2vh]
-    left-[2vw]
+    top-[4vh]
+    left-[3vw]
 
-    text-[34vw] 
-    sm:text-[24vw]
-    lg:text-[20vw]
+    text-[26vw]
+    sm:text-[22vw]
 
-    leading-[0.72]
-    tracking-[-0.06em]
+    leading-[0.78]
+    tracking-[-0.05em]
     font-black
     text-black
     select-none
@@ -61,8 +60,12 @@ export default function Home() {
     z-10
   "
 >
-  ALEXANDER<br/>KNIGHT
+  <span className="block sm:inline">ALEX</span>
+  <span className="block sm:inline">ANDER</span>
+  <br className="hidden sm:block"/>
+  <span className="block sm:inline">KNIGHT</span>
 </h1>
+
 
  
 
