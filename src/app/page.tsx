@@ -43,23 +43,27 @@ export default function Home() {
         {/* HERO */}
         <section className="relative min-h-[240vh]">
 
-          <h1
-            className="
-              fixed
-              top-[6vh]
-              left-[4vw]
-              text-[22vw]
-              leading-[0.72]
-              tracking-[-0.06em]
-              font-black
-              text-black
-              select-none
-              pointer-events-none
-              z-20
-            "
-          >
-            ALEXANDER<br/>KNIGHT
-          </h1>
+   <h1
+  className="
+    fixed
+    top-[4vh]
+    left-[3vw]
+
+    text-[28vw] 
+    sm:text-[22vw]
+
+    leading-[0.72]
+    tracking-[-0.06em]
+    font-black
+    text-black
+    select-none
+    pointer-events-none
+    z-10
+  "
+>
+  ALEXANDER<br/>KNIGHT
+</h1>
+ 
 
         </section>
 
